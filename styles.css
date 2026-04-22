@@ -21,19 +21,33 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: .5rem;
-    box-shadow: 0 0 20px #380853;
+    
 }
 
 .pantalla{
     grid-column: 1 / 5;
     background-color: rgb(237, 227, 241);
-    padding: 1.5rem;
-    font-size: 1rem;
-    text-align: center;
+    padding: 1rem;
     border-radius: .5rem;
-    margin-bottom: 1.5rem;
-    font-family: monospace;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
 }
+
+.pantalla input{
+    padding: .5rem;
+    border-radius: .3rem;
+    border: none;
+    text-align: center;
+    margin: 2%;
+    background-color: rgb(237, 227, 241);
+}
+
+.pantalla input, .pantalla p{
+    width: 70%;
+}
+
 
 .btn{
     background-color: rgb(242, 222, 252);
