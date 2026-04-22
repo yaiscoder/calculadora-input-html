@@ -12,14 +12,12 @@
     <div class="calculadora">
 
         <div class="pantalla">
-            <input type="number" id="numero1" name="numero1" placeholder="Ingrese el número 1" required>
-            <select>
-                <option>+</option>
-                <option>-</option>
-                <option>*</option>
-                <option>/</option>
-            </select>
-            <input type="number" id="numero2" name="numero2" placeholder="Ingrese el número 2" required>
+            <input type="number" id="numero1" name="numero1" required>
+            <input type="text" id="operacion" name="operacion" readonly>
+            <input type="number" id="numero2" name="numero2" required>
+            <p>=</p>
+            <input type="number" id="resultado" name="resultado"  readonly>
+            
         </div>
 
         <button class="btn" id="borrar">Reset</button>
@@ -42,3 +40,6 @@
         <button class="btn">.</button>
 
     </div>
+    <script src="script.js"></script>
+</body>
+</html>
